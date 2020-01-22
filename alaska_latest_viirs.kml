@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Folder>
+  <name>Active Fire Mapping Program</name>
+  <description><![CDATA[Satellite fire detection data and related fire intelligence information published by the USDA Forest Service Active Fire Mapping Program and program cooperators.  KMLs are organized by geographic area and updated frequently.  Please view the description for each KML below for product details.<br/><br/>  Additional fire geospatial data/products and information are available at <a href="https://fsapps.nwcg.gov/afm"> https://fsapps.nwcg.gov/afm </a>]]></description>
+  <visibility>1</visibility>
+  <open>1</open>
+  <LookAt>
+     <longitude> -154.75 </longitude>
+     <latitude> 62.5 </latitude>
+     <altitude> 4000000.0 </altitude>
+     <altitudeMode>relativeToGround</altitudeMode>
+  </LookAt>
+  <Region>
+     <LatLonAltBox>
+       <north> 75.0 </north>
+       <south> 50.0 </south>
+       <east> -129.5 </east>
+       <west> -180 </west>
+     </LatLonAltBox>
+     <Lod>
+       <minLodPixels>128</minLodPixels>
+       <maxLodPixels>-1</maxLodPixels>
+     </Lod>
+   </Region>
+
+    <NetworkLink>
+      <name>VIIRS-AF Fire Detections</name>
+      <open>0</open>
+	  <visibility>1</visibility>
+	  <flyToView>0</flyToView>
+	  <Link>
+	    <href>https://fsapps.nwcg.gov/afm/data_viirs/kml/alaska.kmz</href>
+		<refreshMode>onInterval</refreshMode>
+		<refreshInterval>900</refreshInterval>
+	  </Link>   
+    </NetworkLink>
+ 
+ 	<NetworkLink>
+      <name>VIIRS I Band Fire Detections</name>
+      <open>0</open>
+	  <visibility>0</visibility>
+	  <flyToView>0</flyToView>
+	  <Link>
+	    <href>https://fsapps.nwcg.gov/afm/data_viirs_iband/kml/alaska.kmz</href>
+		<refreshMode>onInterval</refreshMode>
+		<refreshInterval>900</refreshInterval>
+	  </Link>   
+    </NetworkLink>
+</Folder>
+</kml>
